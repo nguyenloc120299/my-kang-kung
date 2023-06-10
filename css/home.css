@@ -1,0 +1,170 @@
+.card {
+    min-height: 90px;
+    position: relative;
+    width: 100%;
+    background: linear-gradient(
+        268.06deg,
+        rgba(238, 0, 51, 0.5) -5.29%,
+        rgba(105, 14, 66, 0.5) 67.91%,
+        rgba(58, 24, 47, 0.5) 90.42%,
+        rgba(27, 25, 38, 0.5) 110.71%
+    );
+    background-blend-mode: screen;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: auto;
+    border-top: solid 2px rgba(255, 255, 255, 1);
+    padding: 10px;
+}
+.on-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 8px;
+    gap: 4px;
+    width: 45px;
+    height: 23px;
+    background: #ff76ac;
+    border-radius: 12px 0px 0px 12px;
+}
+.off-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 4px 4px 8px;
+    gap: 4px;
+    width: 47px;
+    height: 23px;
+    background: #251829;
+    border-radius: 0px 12px 12px 0px;
+}
+#setting {
+    display: none;
+}
+#setting:target {
+    display: block;
+}
+.otp-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px;
+    gap: 12px;
+    width: 30px;
+    height: 37px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #251829;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+}
+#confirm_subscribe,
+#confirm_cancle,
+#confirm-predict {
+    display: none;
+}
+#confirm_subscribe:target,
+#confirm_cancle:target,
+#confirm-predict:target {
+    display: block;
+}
+#confirm-predict:target #main-predict {
+    display: none;
+}
+
+.btn-mission {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 12px 20px;
+    gap: 10px;
+    width: 100px;
+    height: 37px;
+    background: linear-gradient(97.02deg, #ceb9ff -12.9%, #d291ff 27.12%, #ef5fff 86.07%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #5b0e27;
+}
+
+.btn-mounthly-prize {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 4px;
+    min-width: 100px;
+    height: 37px;
+    background: linear-gradient(97.76deg, #ff5f07 9.79%, rgba(255, 52, 139, 0) 86.78%);
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffdeeb;
+    border: 1px solid #ffff;
+}
+.btn-submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    gap: 10px;
+    width: 174px;
+    height: 29px;
+    background: linear-gradient(97.02deg, #f3da7f -12.9%, #e0b452 27.12%, #ffdba3 86.07%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #5b0e27;
+}
+.card-predict {
+    background: linear-gradient(
+        180.08deg,
+        rgba(238, 0, 51, 0.7) 0.05%,
+        rgba(105, 14, 66, 0.7) 63.07%,
+        rgba(58, 24, 47, 0.7) 82.44%,
+        rgba(27, 25, 38, 0.7) 99.91%
+    );
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    max-width: 345px;
+    width: 100%;
+    height: 397px;
+    margin: auto;
+    border: 1px solid #ffff;
+}
