@@ -68,12 +68,16 @@
 }
 #confirm_subscribe,
 #confirm_cancle,
-#confirm-predict {
+#confirm-predict,
+#confirm_prediction,
+#congratulation {
     display: none;
 }
 #confirm_subscribe:target,
 #confirm_cancle:target,
-#confirm-predict:target {
+#confirm-predict:target,
+#confirm_prediction:target,
+#congratulation:target {
     display: block;
 }
 #confirm-predict:target #main-predict {
@@ -167,4 +171,60 @@
     height: 397px;
     margin: auto;
     border: 1px solid #ffff;
+}
+.card-mission {
+    background: linear-gradient(
+        180.08deg,
+        rgba(238, 0, 51, 0.7) 0.05%,
+        rgba(105, 14, 66, 0.7) 63.07%,
+        rgba(58, 24, 47, 0.7) 82.44%,
+        rgba(27, 25, 38, 0.7) 99.91%
+    );
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+.text-mission-1 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: justify;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #4c5fff 2.8%, #f75fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.text-mission-2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    color: #1a005f;
+}
+.btn_claim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 52px;
+    height: 20px;
+    background: linear-gradient(82.89deg, #ff5f08 5.39%, #ff5ff9 94.31%);
+    border-radius: 6px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #ffdeeb;
 }

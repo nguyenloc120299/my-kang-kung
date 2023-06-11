@@ -1,0 +1,89 @@
+.btn-option-predict {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 10px;
+    width: 109.67px;
+    height: 37px;
+    background: linear-gradient(82.89deg, #ff5f08 5.39%, #ff5ff9 94.31%);
+    border-radius: 20px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+}
+/* .btn-history {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}*/
+
+.btn-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 10px;
+    width: 109.67px;
+    height: 37px;
+    background: linear-gradient(90deg, #4c5fff 2.8%, #f75fff 100%);
+    border-radius: 20px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.card-history {
+    width: 100%;
+    min-height: 529px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0px 24px 24px 24px;
+    position: relative;
+}
+.card-history::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -55px;
+    width: 125px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 24px 24px 0px 0px;
+}
+.title-table-history {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #ffffff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffdeeb;
+}
+.row-table-history {
+    padding: 15px 0;
+    border-bottom: 1px solid #ffdeeb;
+}

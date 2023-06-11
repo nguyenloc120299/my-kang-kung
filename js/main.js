@@ -4,7 +4,7 @@ const image3 = document.getElementById('img3');
 const image4 = document.getElementById('img4');
 const image5 = document.getElementById('img5');
 const image6 = document.getElementById('img6');
-
+const predict = document.getElementById('predict')
 
 function swapImages() {
     image1.classList.add('move-left');
