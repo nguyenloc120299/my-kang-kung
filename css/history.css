@@ -55,7 +55,7 @@
     width: 100%;
     min-height: 529px;
     background: rgba(255, 255, 255, 0.3);
-    border-radius: 0px 24px 24px 24px;
+    border-radius: 24px;
     position: relative;
     border-bottom: 1px solid rgba(255, 52, 139, 1);
     border-right: 1px solid rgba(255, 52, 139, 1);
@@ -66,6 +66,27 @@
     left: 0;
     top: -6px;
     min-width: 140px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 24px 24px 0px 0px;
+}
+.content-history1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-43%);
+    top: -6px;
+    min-width: 140px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 24px 24px 0px 0px;
+}
+.content-history2::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -6px;
+    min-width: 120px;
     height: 55px;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 24px 24px 0px 0px;

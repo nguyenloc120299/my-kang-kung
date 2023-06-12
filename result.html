@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/history.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>MY KANG KUNG</title>
+    <script src="js/framework.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="content p-0">
+            <div>
+                <img src="assets/images/result-img.png" />
+            </div>
+            <div class="p-[10px]">
+                <div class="flex justify-center gap-4 mb-2">
+                    <div class="text-c-1 font-z-18 min-w-[100px]">Result of</div>
+                    <label id="date-1"
+                        class="max-w-[200px] w-full h-[27px] rounded-[8px] flex justify-between items-center px-[4px]"
+                        style="background: rgba(37, 24, 41, 0.7);">
+                        <input class="hidden" id="date-1" />
+                        <span class="text-c-2 font-z-10">Week</span>
+                        <div>
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2321 16C10.4623 17.3333 8.53775 17.3333 7.76795 16L3.00481 7.75C2.23501 6.41667 3.19726 4.75 4.73686 4.75L14.2631 4.75C15.8027 4.75 16.765 6.41667 15.9952 7.75L11.2321 16Z"
+                                    fill="#FF76AC" />
+                            </svg>
+
+                        </div>
+                    </label>
+
+                </div>
+                <div class="flex justify-center gap-4 mb-4">
+                    <div class="text-c-1 font-z-18 min-w-[100px]">Period</div>
+                    <label id="date-1"
+                        class="max-w-[200px] w-full h-[27px] rounded-[8px] flex justify-between items-center px-[4px]"
+                        style="background: rgba(37, 24, 41, 0.7);">
+                        <input class="hidden" id="date-1" />
+                        <span class="text-c-2 font-z-10">01/02/2023 - 08/02/2023</span>
+                        <div>
+                            <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2321 16C10.4623 17.3333 8.53775 17.3333 7.76795 16L3.00481 7.75C2.23501 6.41667 3.19726 4.75 4.73686 4.75L14.2631 4.75C15.8027 4.75 16.765 6.41667 15.9952 7.75L11.2321 16Z"
+                                    fill="#FF76AC" />
+                            </svg>
+
+                        </div>
+                    </label>
+
+                </div>
+                <div class="mt-4 flex justify-center items-center" onclick="window.open('/home.html')">
+                    <div class="btn-search">
+                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.8333 2.33333C18.6293 2.33333 23.3333 7.03733 23.3333 12.8333C23.3333 18.6293 18.6293 23.3333 12.8333 23.3333C7.03734 23.3333 2.33334 18.6293 2.33334 12.8333C2.33334 7.03733 7.03734 2.33333 12.8333 2.33333ZM12.8333 21C17.3454 21 21 17.3454 21 12.8333C21 8.32125 17.3454 4.66667 12.8333 4.66667C8.32126 4.66667 4.66668 8.32125 4.66668 12.8333C4.66668 17.3454 8.32126 21 12.8333 21ZM22.7329 21.0829L26.0327 24.3827L24.3828 26.0326L21.083 22.7328L22.7329 21.0829Z"
+                                fill="#FFDEEB" />
+                        </svg>
+                        search
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="z-[999]">
+            <div class="w-full h-[72px] rounded-[30px] p-[15px]" style="background: rgba(0, 0, 0, 0.45);">
+                <div class="w-full h-full flex justify-between items-center">
+                    <div class="flex flex-col ">
+                        <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mx-auto">
+                            <path
+                                d="M21 21.333C21 21.9773 20.4777 22.4997 19.8333 22.4997H1.16667C0.52234 22.4997 0 21.9773 0 21.333V9.0703C0 8.71027 0.166215 8.37042 0.450403 8.14939L9.78378 0.890131C10.2051 0.562461 10.7949 0.562461 11.2162 0.890131L20.5495 8.14939C20.8337 8.37042 21 8.71027 21 9.0703V21.333ZM18.6667 20.1663V9.6409L10.5 3.28904L2.33333 9.6409V20.1663H18.6667Z"
+                                fill="#FF76AC" />
+                        </svg>
+
+                        <p class="text-c-5 text-[10px] text-[#ff76ac]">
+                            Home
+                        </p>
+                    </div>
+                    <div class="flex flex-col ">
+                        <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mx-auto">
+                            <path
+                                d="M14.6724 16.7645V19.17H20.5057V21.5034H6.50569V19.17H12.339V16.7645C7.735 16.1904 4.17236 12.2629 4.17236 7.50342V0.503418H22.839V7.50342C22.839 12.2629 19.2764 16.1904 14.6724 16.7645ZM6.50569 2.83675V7.50342C6.50569 11.3694 9.6397 14.5034 13.5057 14.5034C17.3717 14.5034 20.5057 11.3694 20.5057 7.50342V2.83675H6.50569ZM0.672359 2.83675H3.00569V7.50342H0.672359V2.83675ZM24.0057 2.83675H26.339V7.50342H24.0057V2.83675Z"
+                                fill="#FFDEEB" />
+                        </svg>
+                        <span class="text-c-5 text-[10px] text-[#FFDEEB]">
+                            Result
+                        </span>
+
+                    </div>
+                    <div>
+                        <div class="mt-[-50px]">
+                            <img src="assets/images/Predict.png" />
+                        </div>
+                        <span class="text-c-5 text-[10px] text-[#FFDEEB]">
+                            Predict
+                        </span>
+
+                    </div>
+                    <div class="flex flex-col">
+                        <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mx-auto">
+                            <path
+                                d="M3 2.66668H0.666664V0.333344H19.3333V2.66668H17V5.00001C17 6.88468 16.0478 8.40047 14.8488 9.63946C14.0287 10.4868 13.031 11.2673 12.0194 12C13.031 12.7327 14.0287 13.5132 14.8488 14.3605C16.0478 15.5995 17 17.1154 17 19V21.3333H19.3333V23.6667H0.666664V21.3333H3V19C3 17.1154 3.95218 15.5995 5.15121 14.3605C5.97129 13.5132 6.96902 12.7327 7.98061 12C6.96902 11.2673 5.97129 10.4868 5.15121 9.63946C3.95218 8.40047 3 6.88468 3 5.00001V2.66668ZM5.33333 2.66668V5.00001C5.33333 6.03201 5.83948 6.99538 6.82795 8.01681C7.676 8.89317 8.7806 9.71311 10 10.5745C11.2194 9.71311 12.324 8.89317 13.172 8.01681C14.1606 6.99538 14.6667 6.03201 14.6667 5.00001V2.66668H5.33333ZM10 13.4256C8.7806 14.2869 7.676 15.1068 6.82795 15.9832C5.83948 17.0047 5.33333 17.968 5.33333 19V21.3333H14.6667V19C14.6667 17.968 14.1606 17.0047 13.172 15.9832C12.324 15.1068 11.2194 14.2869 10 13.4256Z"
+                                fill="#FFDEEB" />
+                        </svg>
+                        <span class="text-c-5 text-[10px] text-[#FFDEEB]">
+                            History
+                        </span>
+
+                    </div>
+                    <div class="flex flex-col">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="mx-auto">
+                            <path
+                                d="M0.5 2.82761C0.5 1.5421 1.54139 0.5 2.82761 0.5H19.1724C20.4579 0.5 21.5 1.54139 21.5 2.82761V19.1724C21.5 20.4579 20.4586 21.5 19.1724 21.5H2.82761C1.5421 21.5 0.5 20.4586 0.5 19.1724V2.82761ZM2.83333 2.83333V19.1667H19.1667V2.83333H2.83333ZM6.30085 18.2109C5.57905 17.8984 4.89505 17.515 4.25763 17.0695C5.71235 14.8212 8.24202 13.3333 11.1192 13.3333C13.9184 13.3333 16.3887 14.7416 17.8601 16.8884C17.2344 17.3509 16.5608 17.7523 15.8481 18.0838C14.7884 16.6194 13.065 15.6667 11.1192 15.6667C9.11758 15.6667 7.35149 16.6748 6.30085 18.2109ZM11 12.1667C8.74483 12.1667 6.91667 10.3385 6.91667 8.08333C6.91667 5.82817 8.74483 4 11 4C13.2552 4 15.0833 5.82817 15.0833 8.08333C15.0833 10.3385 13.2552 12.1667 11 12.1667ZM11 9.83333C11.9665 9.83333 12.75 9.0498 12.75 8.08333C12.75 7.11683 11.9665 6.33333 11 6.33333C10.0335 6.33333 9.25 7.11683 9.25 8.08333C9.25 9.0498 10.0335 9.83333 11 9.83333Z"
+                                fill="#FFDEEB" />
+                        </svg>
+                        <span class="text-c-5 text-[10px] text-[#FFDEEB]">
+                            Account
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- -----modal---- -->
+        <div class="fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-screen max-h-full  z-[99999]"
+            style="background: rgba(108, 123, 255, 0.7)" id="confirm_subscribe">
+            <div class="h-full w-full flex justify-center items-center">
+                <div class="max-w-[345px] w-full min-h-[363px] rounded-[20px] relative p-[10px]"
+                    style="background: linear-gradient(180.08deg, rgba(238, 0, 51, 0.7) 0.05%, rgba(105, 14, 66, 0.7) 63.07%, rgba(58, 24, 47, 0.7) 82.44%, rgba(27, 25, 38, 0.7) 99.91%);">
+                    <div class="absolute top-[10px] right-[10px]">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="7.41418" y="21.5391" width="20" height="2" rx="1"
+                                transform="rotate(-45 7.41418 21.5391)" fill="white" />
+                            <rect x="8.41418" y="7.53912" width="20" height="2" rx="1"
+                                transform="rotate(45 8.41418 7.53912)" fill="white" />
+                            <rect x="1" y="1" width="28" height="28" rx="14" stroke="white" stroke-width="2" />
+                        </svg>
+
+                    </div>
+                    <div class="pt-[30px]">
+                        <h3 class="text-c-1 justify-center" style="font-size: 24px;">
+                            Confirm to Subscribe
+                        </h3>
+                        <p class="text-c-1 justify-center mt-[20px]">
+                            OTP has been sent to your phone
+                        </p>
+                        <p class="text-c-1 justify-center my-[20px]">
+                            OTP
+                        </p>
+                        <div class="flex justify-center gap-2 mb-[20px]">
+                            <input value="-" class="otp-input" style="background: rgba(255, 255, 255, 0.6);" />
+                            <input value="-" class="otp-input" style="background: rgba(255, 255, 255, 0.6);" />
+                            <input value="-" class="otp-input" style="background: rgba(255, 255, 255, 0.6);" />
+                            <input value="-" class="otp-input" style="background: rgba(255, 255, 255, 0.6);" />
+                            <input value="-" class="otp-input" style="background: rgba(255, 255, 255, 0.6);" />
+                            <input value="-" class="otp-input " style="background: rgba(255, 255, 255, 0.6);" />
+
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <div class="btn-c-2">
+                                <span class="text-c-1">confirm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ---confirm--- -->
+
+        <div class="fixed top-0 left-0 right-0 z-50  w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-screen max-h-full  z-[99999]"
+            style="background: rgba(108, 123, 255, 0.6)" id="confirm_cancle">
+            <div class="h-full w-full flex justify-center items-center">
+                <div class="max-w-[345px] w-full min-h-[363px] rounded-[20px] relative p-[10px]"
+                    style="background: linear-gradient(180.08deg, rgba(238, 0, 51, 0.7) 0.05%, rgba(105, 14, 66, 0.7) 63.07%, rgba(58, 24, 47, 0.7) 82.44%, rgba(27, 25, 38, 0.7) 99.91%);">
+                    <div class="absolute top-[10px] right-[10px]">
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="7.41418" y="21.5391" width="20" height="2" rx="1"
+                                transform="rotate(-45 7.41418 21.5391)" fill="white" />
+                            <rect x="8.41418" y="7.53912" width="20" height="2" rx="1"
+                                transform="rotate(45 8.41418 7.53912)" fill="white" />
+                            <rect x="1" y="1" width="28" height="28" rx="14" stroke="white" stroke-width="2" />
+                        </svg>
+
+                    </div>
+                    <div class="pt-[40px]">
+                        <h3 class="text-c-1 justify-center" style="font-size: 24px;">
+                            Confirm to cancel
+                        </h3>
+                        <div class="my-[20px]">
+                            <div class="flex justify-center items-center">
+                                <img src="assets/images/meme1.png" />
+                            </div>
+                        </div>
+                        <p class="text-c-1 justify-center my-[20px]">
+                            Do you want to cancel daily package?
+                        </p>
+                        <div class="flex justify-center items-center gap-[20px]">
+                            <div class="btn-c-3">
+                                <div class="text-c-3 font-z-18">
+                                    NO
+                                </div>
+                            </div>
+                            <div class="btn-c-2">
+                                <div class="text-c-1 font-z-18">
+                                    confirm
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

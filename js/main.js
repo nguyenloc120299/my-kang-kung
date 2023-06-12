@@ -37,4 +37,11 @@ function swapImages() {
 setTimeout(swapImages, 500);
 
 
+$(function () {
+    $('#daterange').daterangepicker({
+        opens: 'center'
+    }, function (start, end, label) {
+        console.log('A date range was chosen: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+});
 
