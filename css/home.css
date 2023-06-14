@@ -70,14 +70,18 @@
 #confirm_cancle,
 #confirm-predict,
 #confirm_prediction,
-#congratulation {
+#congratulation,
+#winner-list,
+#winner-infomation {
     display: none;
 }
 #confirm_subscribe:target,
 #confirm_cancle:target,
 #confirm-predict:target,
 #confirm_prediction:target,
-#congratulation:target {
+#congratulation:target,
+#winner-list:target,
+#winner-infomation:target {
     display: block;
 }
 #confirm-predict:target #main-predict {
@@ -108,7 +112,33 @@
 
     color: #5b0e27;
 }
+.btn-monthly {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 12px 20px;
+    gap: 10px;
+    width: 218px;
+    height: 37px;
+    background: linear-gradient(91.69deg, #ff5f07 13.18%, #cc0e47 80.22%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* W */
+
+    color: #ffdeeb;
+}
 .btn-mounthly-prize {
     display: flex;
     flex-direction: row;
@@ -185,6 +215,12 @@
     border-top: 1px solid #ffffff;
     border-right: 1px solid #ffffff;
 }
+.card-monthly {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 0.3);
+}
 .text-mission-1 {
     font-family: "Quicksand";
     font-style: normal;
@@ -257,6 +293,15 @@
     /* W FFFFF */
 
     color: #ffffff;
+}
+.box-rank_mounthly {
+    background: url(../assets/images/mounthly_box.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 90px;
+    position: relative;
 }
 .box-rank {
     background: url(../assets/images/box-rank.png);
@@ -377,4 +422,109 @@
     /* border-top: 1px solid rgba(255, 255, 255, 1);
     border-left: 1px solid rgba(255, 255, 255, 1);
     border-right: 1px solid rgba(255, 255, 255, 1); */
+}
+.text-calender {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+.label_modal_winnerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px 12px 32px;
+    gap: 48px;
+
+    width: 280px;
+    height: 39px;
+
+    /* Buttom 1 */
+
+    background: linear-gradient(90deg, #4c5fff 2.8%, #f75fff 100%);
+    border-radius: 12px;
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: capitalize;
+
+    color: #ffffff;
+}
+.label_modal_winnerInfo1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 29px;
+
+    width: 280px;
+    height: 42px;
+
+    background: rgba(255, 222, 235, 0.3);
+    border-radius: 12px;
+}
+.text-congratulation {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    /* gold rad */
+
+    background: linear-gradient(97.02deg, #f3da7f -12.9%, #e0b452 27.12%, #ffdba3 86.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.phone_account {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* gold rad */
+
+    background: linear-gradient(97.02deg, #f3da7f -12.9%, #e0b452 27.12%, #ffdba3 86.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@keyframes move-left {
+    0% {
+        left: 10%;
+    }
+    100% {
+        left: 45%;
+    }
+}
+
+.animate-left {
+    animation: move-left 1s ease-in-out;
+    animation-fill-mode: forwards;
 }
