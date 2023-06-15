@@ -5,6 +5,17 @@ const image4 = document.getElementById('img4');
 const image5 = document.getElementById('img5');
 const image6 = document.getElementById('img6');
 const predict = document.getElementById('predict')
+const bgAnimation = document.getElementById('bg-animation')
+const mainPredict = document.getElementById('main-predict');
+const submitBtn = document.getElementById('submitBtn');
+const confirmPredict = document.getElementById('confirm-predict')
+submitBtn.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default behavior of the link
+    mainPredict.style.display = 'none';
+    confirmPredict.style.display = 'block'
+});
+
+
 
 function swapImages() {
     image1.classList.add('move-left');
@@ -24,24 +35,47 @@ function swapImages() {
         image2.classList.remove('move-left');
         image4.classList.remove('move-left');
         image5.classList.remove('move-left');
-        image3.classList.add('move-right');
-        image6.classList.add('move-right');
+        image3.classList.add('move-left');
+        image6.classList.add('move-left');
     }, 300);
 
     setTimeout(() => {
-        image3.classList.remove('move-right');
-        image6.classList.remove('move-right');
+        const tempSrc = image1.src;
+        image1.src = image3.src;
+        image3.src = tempSrc;
+
+        const tempClass = image1.classList;
+        image1.classList = image3.classList;
+        image3.classList = tempClass;
+
+        const tempSrc2 = image4.src;
+        image4.src = image6.src;
+        image6.src = tempSrc2;
+
+        const tempClass2 = image4.classList;
+        image4.classList = image6.classList;
+        image6.classList = tempClass2;
+
+        setTimeout(() => {
+            bgAnimation.classList.add('bg-animation');
+            image1.classList.remove('move-left');
+            image3.classList.remove('move-left');
+            image4.classList.remove('move-left');
+            image6.classList.remove('move-left');
+        }, 100);
+
     }, 500);
+
+    setTimeout(() => {
+        bgAnimation.classList.remove('bg-animation');
+    }, 1700);
 }
 
-setTimeout(swapImages, 500);
+setTimeout(swapImages, 700);
 
 
-$(function () {
-    $('#daterange').daterangepicker({
-        opens: 'center'
-    }, function (start, end, label) {
-        console.log('A date range was chosen: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-    });
-});
+setTimeout(swapImages, 700);
+
+
+
 

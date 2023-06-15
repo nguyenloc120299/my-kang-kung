@@ -156,7 +156,7 @@
     animation: progress-forward 3s infinite;
 }
 .bg-color-1 {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
 }
 .bg-color-2 {
     background: rgba(0, 0, 0, 0.3);
@@ -254,7 +254,8 @@
     width: 100%;
 }
 .bg-animation {
-    animation: progress-coin-move 2s infinite;
+    animation: progress-coin-move 2s;
+    animation-fill-mode: forwards;
 }
 .bg-coin-loading img {
     width: 100%;
@@ -321,7 +322,7 @@ footer {
         top: -120%;
     }
     to {
-        top: -32%;
+        top: -7%;
     }
 }
 
