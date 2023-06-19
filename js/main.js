@@ -9,11 +9,13 @@ const bgAnimation = document.getElementById('bg-animation')
 const mainPredict = document.getElementById('main-predict');
 const submitBtn = document.getElementById('submitBtn');
 const confirmPredict = document.getElementById('confirm-predict')
-submitBtn.addEventListener('click', (event) => {
-    event.preventDefault(); // Prevent the default behavior of the link
-    mainPredict.style.display = 'none';
-    confirmPredict.style.display = 'block'
-});
+if (submitBtn)
+    submitBtn.addEventListener('click', (event) => {
+        event.preventDefault(); // Prevent the default behavior of the link
+
+        mainPredict.style.display = 'none';
+        confirmPredict.style.display = 'block'
+    });
 
 
 
