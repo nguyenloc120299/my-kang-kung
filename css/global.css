@@ -124,6 +124,24 @@
 
     color: #ff76ac;
 }
+.text-c-8 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    text-transform: capitalize;
+
+    /* Main 45 */
+    background: linear-gradient(20deg, #ee0033 -1.54%, #690e42 69.15%, #3a182f 90.88%, #1b1926 110.47%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
 .text-title-1 {
     font-family: "Quicksand";
     font-style: normal;
