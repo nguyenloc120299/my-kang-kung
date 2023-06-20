@@ -52,19 +52,23 @@
     align-items: center;
     padding: 12px 10px;
     gap: 12px;
-    width: 30px;
+    width: 220px;
     height: 37px;
     background: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
+    outline: none;
     font-family: "Quicksand";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    color: #251829;
     text-align: center;
+    letter-spacing: 0.7em;
     text-transform: uppercase;
-    outline: none;
+    color: #251829;
+}
+.otp-input::placeholder {
+    color: #251829;
 }
 #confirm_subscribe,
 #confirm_cancle,
