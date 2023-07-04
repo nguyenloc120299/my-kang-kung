@@ -16,6 +16,21 @@
 
     <title>MY KANG KUNG</title>
     <script src="js/framework.js"></script>
+    <style>
+        #package,
+        #prize {
+            display: none;
+        }
+
+        #package:target,
+        #prize:target {
+            display: block;
+        }
+
+        #package:target #predict {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -100,7 +115,7 @@
             </div>
         </header>
         <div class="content">
-            <div class="relative content-history">
+            <div class="relative content-history" id="predict">
                 <div class="w-full flex justify-center gap-[1rem] items-center mb-[2px] pt-[10px] relative z-[999]">
                     <a href="#predict">
                         <div class="btn-option active_predict">
@@ -379,6 +394,275 @@
                     </div>
                 </div>
             </div>
+            <!-- -----tab2---- -->
+            <div class="relative content-history1" id="package">
+                <div class="w-full flex justify-center gap-[1rem] items-center mb-[2px] pt-[10px] relative z-[999]">
+                    <a href="#predict">
+                        <div class="btn-option ">
+                            predict
+                        </div>
+                    </a>
+                    <a href="#package">
+                        <div class="btn-option active_predict">
+                            package
+                        </div>
+                    </a>
+                    <a href="#prize">
+                        <div class="btn-option">
+                            prize
+                        </div>
+                    </a>
+
+                </div>
+                <div class="card-history">
+                    <div class="p-4 w-full h-full">
+                        <div class="flex justify-between items-center title-table-history">
+                            <div>No</div>
+                            <div>Date</div>
+                            <div>Package</div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">1</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">FREE</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">2</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Buy 3 predictions</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">3</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Buy 1 prediction</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">4</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Daily Package</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">5</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Daily Package</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">6</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Daily Package</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">7</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Daily Package</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">8</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Daily Package</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">9</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">FREE</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">10</div>
+                            <div class="flex flex-col ">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Buy 5 predictions</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center gap-2 pt-4">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.5 8.90856C0.166665 8.13876 0.166668 6.21426 1.5 5.44446L9 1.11434C10.3333 0.344536 12 1.30679 12 2.84639L12 11.5066C12 13.0462 10.3333 14.0085 9 13.2387L1.5 8.90856Z"
+                                    fill="white" />
+                            </svg>
+                            <span class="text-c-1">1</span>
+                            <span class="text-c-1">2</span>
+                            <span class="text-c-1">...</span>
+                            <span class="text-c-1">3</span>
+                            <span class="text-c-1">4</span>
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5 5.44446C11.8333 6.21426 11.8333 8.13876 10.5 8.90856L3 13.2387C1.66666 14.0085 -6.49976e-07 13.0462 -5.82678e-07 11.5066L-2.04126e-07 2.84638C-1.36828e-07 1.30678 1.66667 0.344535 3 1.11434L10.5 5.44446Z"
+                                    fill="white" />
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------tab3------------- -->
+            <div class="relative content-history2" id="prize">
+                <div class="w-full flex justify-center gap-[1rem] items-center mb-[2px] pt-[10px] relative z-[999]">
+                    <a href="#predict">
+                        <div class="btn-option">predict</div>
+                    </a>
+                    <a href="#package">
+                        <div class="btn-option">package</div>
+                    </a>
+                    <a href="#prize">
+                        <div class="btn-option active_predict">prize</div>
+                    </a>
+                </div>
+                <div class="card-history" style="border-radius: 24px 0px 24px 24px">
+                    <div class="p-4 w-full h-full">
+                        <div class="flex justify-between items-center title-table-history">
+                            <div>No</div>
+                            <div>Date</div>
+                            <div>Prize</div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">1</div>
+                            <div class="flex flex-col">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">5th Prize</span>
+                                <div class="text-c-8">3.000 MB</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">2</div>
+                            <div class="flex flex-col">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">5th Prize</span>
+                                <div class="text-c-8">3.000 MB</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">3</div>
+                            <div class="flex flex-col">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">No Prize</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">4</div>
+                            <div class="flex flex-col">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">No Prize</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">5</div>
+                            <div class="flex flex-col">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">3th Prize</span>
+                                <div class="text-c-8">8.000 MB</div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">6</div>
+                            <div class="flex flex-col">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">No Prize</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">7</div>
+                            <div class="flex flex-col">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1">Daily Package</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center row-table-history">
+                            <div class="text-c-1">8</div>
+                            <div class="flex flex-col">
+                                <div class="text-c-2 font-z-10">10:30 am 20/02/2023</div>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="text-c-1"> Buy 5 predictions</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center items-center gap-2 pt-4">
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.5 8.90856C0.166665 8.13876 0.166668 6.21426 1.5 5.44446L9 1.11434C10.3333 0.344536 12 1.30679 12 2.84639L12 11.5066C12 13.0462 10.3333 14.0085 9 13.2387L1.5 8.90856Z"
+                                    fill="white" />
+                            </svg>
+                            <span class="text-c-1">1</span>
+                            <span class="text-c-1">2</span>
+                            <span class="text-c-1">...</span>
+                            <span class="text-c-1">3</span>
+                            <span class="text-c-1">4</span>
+                            <svg width="12" height="14" viewBox="0 0 12 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.5 5.44446C11.8333 6.21426 11.8333 8.13876 10.5 8.90856L3 13.2387C1.66666 14.0085 -6.49976e-07 13.0462 -5.82678e-07 11.5066L-2.04126e-07 2.84638C-1.36828e-07 1.30678 1.66667 0.344535 3 1.11434L10.5 5.44446Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="z-[999]">
             <div class="w-full h-[72px] rounded-[30px] p-[15px]" style="background: rgba(0, 0, 0, 0.45);">
@@ -445,6 +729,22 @@
         </footer>
     </div>
     <script src="js/main.js"></script>
+    <script>
+        var packageElement = document.getElementById('package');
+        var predictElement = document.getElementById('predict');
+        var prizeElement = document.getElementById('prize');
+        window.addEventListener('hashchange', function () {
+            if (location.hash === '#package') {
+                predictElement.style.display = 'none';
+
+            } else if (location.hash === '#prize') {
+                predictElement.style.display = 'none';
+            }
+            else {
+                predictElement.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 
 </html>

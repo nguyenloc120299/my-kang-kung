@@ -140,7 +140,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-
 }
 .text-title-1 {
     font-family: "Quicksand";
@@ -154,6 +153,14 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+select {
+    -moz-appearance: none; /* Firefox */
+    -webkit-appearance: none; /* Safari and Chrome */
+    appearance: none;
+}
+#dropdown {
+    z-index: 9999999;
 }
 .progress-bar {
     max-width: 280px;

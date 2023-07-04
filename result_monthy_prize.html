@@ -13,7 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <title>MY KANG KUNG</title>
     <script src="js/framework.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -34,7 +35,7 @@
 
                 <div class="flex justify-center items-center gap-4 mb-4">
                     <div class="text-c-1 font-z-10 min-w-[100px]">Result of Month</div>
-                    <label id="date-1"
+                    <label id="date-range"
                         class="max-w-[200px] w-full h-[27px] rounded-[8px] flex justify-between items-center px-[4px]"
                         style="background: rgba(37, 24, 41, 0.7);">
                         <input class="hidden" id="date-1" />
@@ -302,7 +303,23 @@
 
 
     </div>
+    <script>
+        const dateRangePicker = document.getElementById('date-range');
 
+        flatpickr(dateRangePicker, {
+            mode: 'range',
+            dateFormat: 'd/m/Y',
+            onClose: function (selectedDates, dateStr, instance) {
+                // Handle the selected date range here
+                const startDate = selectedDates[0];
+                const endDate = selectedDates[1];
+                console.log('Start Date:', startDate);
+                console.log('End Date:', endDate);
+            },
+            // Add more configuration options as needed
+        });
+
+    </script>
 </body>
 
 </html>
