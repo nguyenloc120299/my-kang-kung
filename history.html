@@ -116,7 +116,7 @@
         </header>
         <div class="content">
             <div class="relative content-history" id="predict">
-                <div class="w-full flex justify-center gap-[1rem] items-center mb-[2px] pt-[10px] relative z-[999]">
+                <div class="w-full flex justify-around  items-center mb-[2px] pt-[10px] relative z-[999]">
                     <a href="#predict">
                         <div class="btn-option active_predict">
                             predict
@@ -396,7 +396,7 @@
             </div>
             <!-- -----tab2---- -->
             <div class="relative content-history1" id="package">
-                <div class="w-full flex justify-center gap-[1rem] items-center mb-[2px] pt-[10px] relative z-[999]">
+                <div class="w-full flex justify-around  items-center mb-[2px] pt-[10px] relative z-[999]">
                     <a href="#predict">
                         <div class="btn-option ">
                             predict
@@ -547,7 +547,7 @@
 
             <!-- ------tab3------------- -->
             <div class="relative content-history2" id="prize">
-                <div class="w-full flex justify-center gap-[1rem] items-center mb-[2px] pt-[10px] relative z-[999]">
+                <div class="w-full flex justify-around  items-center mb-[2px] pt-[10px] relative z-[999]">
                     <a href="#predict">
                         <div class="btn-option">predict</div>
                     </a>
@@ -734,6 +734,7 @@
         var predictElement = document.getElementById('predict');
         var prizeElement = document.getElementById('prize');
         window.addEventListener('hashchange', function () {
+
             if (location.hash === '#package') {
                 predictElement.style.display = 'none';
 
@@ -744,6 +745,7 @@
                 predictElement.style.display = 'block';
             }
         });
+
     </script>
 </body>
 
